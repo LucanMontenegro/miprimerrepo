@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación Técnica: HTML Básico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Guía de HTML Básico</header>
+    <a class="nav-link" href="#Introduccion">Introduccion</a>
+    <a class="nav-link" href="#Etiquetas_Basicas">Etiquetas Basicas</a>
+    <a class="nav-link" href="#Atributos">Atributos</a>
+    <a class="nav-link" href="#Listas">Listas</a>
+    <a class="nav-link" href="#Formularios">Formularios</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduccion">
+      <header>Introduccion</header>
+      <p>HTML (Lenguaje de Marcado de Hipertexto) es el estándar para crear páginas web.</p>
+      <p>Define la estructura básica de un documento.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <p>Se compone de etiquetas que indican cómo deben mostrarse los contenidos.</p>
+      <p>HTML trabaja junto con CSS y JavaScript.</p>
+    </section>
+
+    <section class="main-section" id="Etiquetas_Basicas">
+      <header>Etiquetas Basicas</header>
+      <p>Algunas etiquetas esenciales de HTML son:</p>
+      <ul>
+        <li>&lt;html&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;body&gt;</li>
+        <li>&lt;h1&gt; a &lt;h6&gt;</li>
+        <li>&lt;p&gt;</li>
+      </ul>
+      <code>&lt;h1&gt;Título Principal&lt;/h1&gt;</code>
+      <p>Estas etiquetas ayudan a estructurar el contenido en niveles jerárquicos.</p>
+    </section>
+
+    <section class="main-section" id="Atributos">
+      <header>Atributos</header>
+      <p>Los atributos proporcionan información adicional sobre los elementos.</p>
+      <p>Se escriben dentro de la etiqueta de apertura.</p>
+      <code>&lt;a href="https://www.example.com" target="_blank"&gt;Visítanos&lt;/a&gt;</code>
+      <p>Algunos atributos comunes son: id, class, src, href, alt, title.</p>
+    </section>
+
+    <section class="main-section" id="Listas">
+      <header>Listas</header>
+      <p>HTML ofrece listas ordenadas (&lt;ol&gt;) y no ordenadas (&lt;ul&gt;).</p>
+      <p>Cada ítem de la lista se escribe con &lt;li&gt;.</p>
+      <code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code>
+      <p>Se pueden anidar listas dentro de otras listas.</p>
+    </section>
+
+    <section class="main-section" id="Formularios">
+      <header>Formularios</header>
+      <p>Los formularios permiten enviar datos al servidor.</p>
+      <p>Se crean con la etiqueta &lt;form&gt;.</p>
+      <code>&lt;form action="/submit" method="post"&gt;&lt;/form&gt;</code>
+      <p>Dentro de los formularios se pueden usar inputs, labels, select, textarea y botones.</p>
+    </section>
+  </main>
+</body>
+
+</html>
