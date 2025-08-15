@@ -1,0 +1,87 @@
+<html>
+  <head>
+     <title>Encuesta Xeneize</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Encuesta Xeneize</h1>
+  <p id="description">Contanos qué significa Boca para vos. ¡Tu opinión vale oro!</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Nombre:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      required 
+      placeholder="Tu nombre de hincha"
+    >
+
+    <label id="email-label" for="email">Correo electrónico:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      required 
+      placeholder="ejemplo@boca.com"
+    >
+
+    <label id="number-label" for="number">Edad:</label>
+    <input 
+      type="number" 
+      id="number" 
+      name="number" 
+      min="5" 
+      max="120" 
+      placeholder="Edad Xeneize"
+    >
+
+    <label for="dropdown">¿Cómo te hiciste hincha de Boca?</label>
+    <select id="dropdown" name="origen">
+      <option value="familia">Por mi familia</option>
+      <option value="maradona">Por Maradona</option>
+      <option value="amistad">Por amigos</option>
+      <option value="pasión">Por pura pasión</option>
+    </select>
+
+    <p>¿Sos socio?</p>
+    <label>
+      <input type="radio" name="socio" value="si" /> Sí
+    </label>
+    <label>
+      <input type="radio" name="socio" value="no" /> No
+    </label>
+
+    <p>¿Qué te gusta más de Boca?</p>
+    <label>
+      <input type="checkbox" name="gusto" value="bombonera" /> La Bombonera
+    </label>
+    <label>
+      <input type="checkbox" name="gusto" value="hinchada" /> La hinchada
+    </label>
+    <label>
+      <input type="checkbox" name="gusto" value="idolos" /> Los ídolos
+    </label>
+
+    <label for="comentarios">¿Que opinas de la gestión actual de Riquelme?</label>
+    <textarea 
+      id="comentarios" 
+      name="comentarios" 
+      placeholder="Escribí tu opinión..."
+    ></textarea>
+    <button id="submit" type="submit">Enviar mi opinión</button>
+  </form>
+
+    <label for="comentarios">Dejanos tu mensaje:</label>
+    <textarea 
+      id="comentarios" 
+      name="comentarios" 
+      placeholder="Escribí tu amor por Boca..."
+    ></textarea>
+
+    <button id="submit" type="submit">Enviar mi opinión</button>
+  </form>
+
+</body>
+</html>
